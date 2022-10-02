@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaquery.css">
 </head>
 <body>
     <main>
@@ -19,15 +20,15 @@
             </div>
             
             <form action="cadastro.php" method="post">
-            <p>
+            <p class="campo">
                 <label for="iemail" >Email</label>
                 <input type="email" name="email" id="iemail" placeholder="seu e-mail">
             </p>
-            <p>
+            <p class="campo">
                 <label for="isenha">Senha</label>
                 <input type="password" name="senha" id="isenha" placeholder="sua senha">
             </p>
-            <p>
+            <p class="enviar">
                 <input type="submit" value="Entrar">
                 
             </p>
