@@ -13,8 +13,8 @@ grandes telas: acima de 1200px
         background-image: linear-gradient(to top, #49a09d,#5f2c82);
     }
     section#login {
-        width:80vw;
-        
+        width:100vw;
+        height: 50vh;
         
     }
     div#imagem {
@@ -33,14 +33,22 @@ grandes telas: acima de 1200px
     }
     section#login {
         width:950px;
+        height: 57vh;
 }
 div#imagem {
-    float:left;
+    float:right;
     width: 50%;
     height: 100%;
 }
 div#formulario {
-    float:right;
+    float:left;
     width: 50%;
 }
+div#formulario > h1 {
+    font-size: 2em;
 }
+div#formulario > p {
+    font-size: 1em;
+}
+}
+
