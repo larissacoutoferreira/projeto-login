@@ -5,99 +5,101 @@ PALETA DE CORES
 verde: #49a09d
 lilas: #5f2c82
 */
-* {
+* { 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0px;
     padding: 0px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     box-sizing: border-box;
 }
 
 body, html {
     background:#5f2c82;
-    width: 100vw;
     height: 100vh;
-    
+    width: 100vw; 
 }
+
 main {
-    
     position: relative;
-    width: 100vw;
     height: 100vh;
-     
+    width: 100vw;  
 }
+
 section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    overflow: hidden;
+    
     background-color: white;
     width: 250px;
     height: 515px;
     border-radius: 20px;
-    overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
+    
+    transform: translate(-50%, -50%);
     transition: width .3s, height .3s;
     transition-timing-function: ease;
 }
+
 section#login > div#imagem {
-    height: 33vh;
     display: block;
     background: #5f2c82 url(../imagens/pexels-matthew-simmonds-1570404.jpg) no-repeat;
-    background-position: center center;
-    background-size: cover;
-    
+    background-size: cover;background-position: center center;
+    height: 200px;
     
 }
-div#formulario {
+
+section#login > div#formulario {
     display: block;
     padding: 10px;
 }
+
 div#formulario > h1 {
-    margin-bottom: 10px;
     text-align: center;
+    margin-bottom: 10px;   
 }
 
 div#formulario > p {
-    font-size: 0.8em;
-    
+    font-size: 0.8em;   
 }
 
 form > div.campo {
-    
     background-color: #5f2c82;
+    border: 2px solid #5f2c82;
     display: block;
     width: 100%;
     height: 40px;
-    border: 1px solid #5f2c82;
     border-radius: 8px;
-    margin: 6px 8px 7px 1px;
+    margin: 5px 0px;  
 }
 
 div.campo > label {
     display: none;
 }
+
 div.campo > span {
     color: white;
     font-size: 2em;
     width: 40px;
     padding: 5px;
-    
 }
 
 div.campo > input {
     background-color: #5bc7c3;
     font-size: 1em;
-    width: 90%;
-    transform: translateY(-42px);
-    height: 36px;
+    width: calc(100% - 44px);
+    height: 100%;
     border:0px;
     border-radius: 8px;
-    padding: 4px;
+    padding: 4px; 
+    transform: translate(44px, -42px); 
 }
 
+div.campo > input:focus-within {
+    background-color: white;
+}
 
-
-form input[type=submit] {
+form > input[type=submit] {
     display:block;
     font-size: 1em;
     width: 100%;
@@ -109,23 +111,23 @@ form input[type=submit] {
     cursor: pointer;
 }
 
-form input[type=submit]:hover {
-     background-color: #33706e;
+form > input[type=submit]:hover {
+    background-color: #33706e;
 }
 
-form a.botao {
+form > a.botao {
     display: block;
     text-align: center;
     font-size: 1em;
     width: 100%;
     height: 40px;
-    margin-top: 5px;
     padding-top: 5px;
+    margin-top: 5px;
     background-color: white;
     color:#33706e;
-    border-radius: 7px;
     border: 1px solid #5bc7c3;
-    text-decoration: none;
+    border-radius: 7px;
+    text-decoration: none;  
 }
 
 form a.botao > span {
@@ -135,3 +137,14 @@ form a.botao > span {
 form a.botao:hover {
     background-color: #5bc7c3;
 }
+
+
+
+
+
+
+
+
+
+
+
